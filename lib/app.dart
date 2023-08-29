@@ -9,7 +9,7 @@ import 'package:prueba_proximate_apps/data/driver_adapter/productosApi.dart';
 import 'package:prueba_proximate_apps/domain/useCase/login/loginUseCase.dart';
 import 'package:prueba_proximate_apps/domain/useCase/productos/productosUseCase.dart';
 import 'package:prueba_proximate_apps/ui/screens/homeProductos.dart';
-import 'package:prueba_proximate_apps/ui/screens/login_productos.dart';
+import 'package:prueba_proximate_apps/ui/screens/loginProductos.dart';
 
 class AppProductos extends StatelessWidget {
   const AppProductos({Key? key}) : super(key: key);
