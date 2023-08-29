@@ -1,6 +1,6 @@
 import 'dart:convert';
 import 'package:prueba_proximate_apps/config/const/constantes.dart';
-import 'package:prueba_proximate_apps/data/driver_adapter/erros/productos_api_error.dart';
+import 'package:prueba_proximate_apps/data/erros/productos_api_error.dart';
 import 'package:prueba_proximate_apps/domain/models/productos/geteway/productos_geteway.dart';
 import 'package:prueba_proximate_apps/domain/models/productos/productos.model.dart';
 import 'package:http/http.dart' as http;

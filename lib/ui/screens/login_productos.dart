@@ -3,9 +3,9 @@ import 'dart:convert';
 import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:prueba_proximate_apps/config/providers/login.provider.dart';
+import 'package:prueba_proximate_apps/config/providers/loginProvider.dart';
 import 'package:prueba_proximate_apps/domain/models/login/login.model.dart';
-import 'package:prueba_proximate_apps/ui/screens/drawer_productos.dart';
+import 'package:prueba_proximate_apps/ui/screens/drawerProductos.dart';
 import 'package:rflutter_alert/rflutter_alert.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -20,8 +20,6 @@ class _LoginAppState extends State<LoginApp> {
   late final FocusNode markFocusNode;
   @override
   void initState() {
-    // Show an alert when the app is launched
-    // _showInitialAlert(context);
     super.initState();
   }
 
@@ -64,8 +62,6 @@ class _LoginAppState extends State<LoginApp> {
                 onChanged: ((value) {
                   providerLogin.setUser(value);
                 }),
-                focusNode: userFocus,
-                autofocus: false,
                 decoration: InputDecoration(
                   labelText: 'usuario',
                   border: OutlineInputBorder(
@@ -80,8 +76,6 @@ class _LoginAppState extends State<LoginApp> {
                   providerLogin.setPasword(value);
                 },
                 obscureText: providerLogin.isObscure,
-                autofocus: false,
-                focusNode: passFocus,
                 initialValue: "",
                 decoration: InputDecoration(
                     suffixIcon: IconButton(
@@ -101,7 +95,6 @@ class _LoginAppState extends State<LoginApp> {
                     ),
                     icon: const Icon(Icons.password),
                     iconColor: Colors.transparent),
-                // controller: paswordLogin,
               ),
               const SizedBox(height: 24.0),
               ElevatedButton(
@@ -204,26 +197,6 @@ class _LoginAppState extends State<LoginApp> {
           ),
         ),
       ),
-    );
-  }
-
-  void _showInitialAlert(context) {
-    showDialog(
-      context: context,
-      builder: (BuildContext context) {
-        return AlertDialog(
-          title: const Text('Bienvenido a la Aplicación'),
-          content: const Text('¡Gracias por usar nuestra app!'),
-          actions: [
-            TextButton(
-              onPressed: () {
-                Navigator.of(context).pop(); // Closes the dialog
-              },
-              child: const Text('Aceptar'),
-            ),
-          ],
-        );
-      },
     );
   }
 }

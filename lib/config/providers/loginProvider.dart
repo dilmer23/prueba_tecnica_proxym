@@ -1,8 +1,10 @@
 //injecion de dependecias ddel use case de pokemon
 // cuando se inicie la aplicación  injecten el caso de uso
 // se injecta en la app de configuracon de la app app.dart
+import 'dart:ffi';
+
 import 'package:flutter/material.dart';
-import 'package:prueba_proximate_apps/domain/use_case/login/login_use_case.dart';
+import 'package:prueba_proximate_apps/domain/useCase/login/loginUseCase.dart';
 
 class LoginProviders extends ChangeNotifier {
   final LoginUseCase loginUseCase;
@@ -14,12 +16,14 @@ class LoginProviders extends ChangeNotifier {
   bool _login = false;
   String _pasword = "";
   String _user = "";
+  bool _isLoggingIn  =false;
   String get token => _token;
   int get selectedIndex => _selectedIndex;
   bool get isObscure => _isObscure;
   bool get login => _login;
   String get pasword => _pasword;
   String get user => _user;
+  bool get isLoggingIn => _isLoggingIn;
   LoginProviders({required this.loginUseCase});
 
   void setToken(String results) {
@@ -44,6 +48,10 @@ class LoginProviders extends ChangeNotifier {
   }
    void setUser(String results) {
     _user = results;
+    notifyListeners();
+  }
+  void setIsLoggingIn (bool results) {
+    _isLoggingIn = results;
     notifyListeners();
   }
 }

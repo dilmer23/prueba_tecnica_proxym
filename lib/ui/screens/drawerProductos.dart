@@ -1,10 +1,9 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
-import 'package:prueba_proximate_apps/domain/models/login/login.model.dart';
 import 'package:prueba_proximate_apps/ui/common/cardWidget.dart';
 import 'package:prueba_proximate_apps/ui/common/textWidget.dart';
-import 'package:prueba_proximate_apps/ui/screens/detalle_user.dart';
-import 'package:prueba_proximate_apps/ui/screens/home_productos.dart';
+import 'package:prueba_proximate_apps/ui/screens/detalleUser.dart';
+import 'package:prueba_proximate_apps/ui/screens/homeProductos.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../common/listTitleWidget.dart';
 

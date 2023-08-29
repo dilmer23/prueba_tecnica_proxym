@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:prueba_proximate_apps/config/providers/login.provider.dart';
-import 'package:prueba_proximate_apps/config/providers/productos.provider.dart';
+import 'package:prueba_proximate_apps/config/providers/loginProvider.dart';
+import 'package:prueba_proximate_apps/config/providers/productosProvider.dart';
 import 'package:prueba_proximate_apps/domain/models/productos/productos.model.dart';
 import 'package:prueba_proximate_apps/ui/common/circularProgressWidget.dart';
 import 'package:prueba_proximate_apps/ui/common/clipReactWidget.dart';
 import 'package:prueba_proximate_apps/ui/common/textWidget.dart';
-import 'package:prueba_proximate_apps/ui/screens/detalle_productos.dart';
+import 'package:prueba_proximate_apps/ui/screens/detalleProductos.dart';
 
 class HomeProductos extends StatefulWidget {
   const HomeProductos({Key? key}) : super(key: key);

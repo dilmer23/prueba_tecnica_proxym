@@ -1,6 +1,6 @@
 
 import 'package:flutter/cupertino.dart';
-import 'package:prueba_proximate_apps/domain/use_case/productos/productos_use_case.dart';
+import 'package:prueba_proximate_apps/domain/useCase/productos/productosUseCase.dart';
 
 //injecion de dependecias ddel use case de pokemon
 // cuando se inicie la aplicación  injecten el caso de uso

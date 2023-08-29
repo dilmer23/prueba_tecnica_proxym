@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:prueba_proximate_apps/config/providers/login.provider.dart';
-import 'package:prueba_proximate_apps/config/providers/productos.provider.dart';
-import 'package:prueba_proximate_apps/config/routes/app_routes.dart';
+import 'package:prueba_proximate_apps/config/providers/loginProvider.dart';
+import 'package:prueba_proximate_apps/config/providers/productosProvider.dart';
+import 'package:prueba_proximate_apps/config/routes/appRoutes.dart';
 import 'package:prueba_proximate_apps/config/theme/theme_app.dart';
-import 'package:prueba_proximate_apps/data/driver_adapter/login_api.dart';
-import 'package:prueba_proximate_apps/data/driver_adapter/productos_api.dart';
-import 'package:prueba_proximate_apps/domain/use_case/login/login_use_case.dart';
-import 'package:prueba_proximate_apps/domain/use_case/productos/productos_use_case.dart';
-import 'package:prueba_proximate_apps/ui/screens/home_productos.dart';
+import 'package:prueba_proximate_apps/data/driver_adapter/loginApi.dart';
+import 'package:prueba_proximate_apps/data/driver_adapter/productosApi.dart';
+import 'package:prueba_proximate_apps/domain/useCase/login/loginUseCase.dart';
+import 'package:prueba_proximate_apps/domain/useCase/productos/productosUseCase.dart';
+import 'package:prueba_proximate_apps/ui/screens/homeProductos.dart';
 import 'package:prueba_proximate_apps/ui/screens/login_productos.dart';
 
 class AppProductos extends StatelessWidget {
